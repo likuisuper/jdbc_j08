@@ -22,4 +22,38 @@ public interface IUserDao {
      * @return 集合对象
      */
     List<User> findAll();
+
+    /**
+     * 返回的是单个对象
+     * @param username 唯一的
+     * @param password
+     * @return
+     */
+    User findByUserName(String username,String password);
+
+    /**
+     * PrepareStatement
+     * 批量保存
+     * @param users
+     */
+    void saveList(List<User> users);
+
+    /**
+     * 根据id来查询用户
+     * @param id
+     * @return
+     */
+    User getById(Integer id);
+
+    /**
+     * 根据id来删除
+     * @param id
+     */
+    void delById(Integer id);
+
+    /**
+     * 根据用户的id来更新列
+     * @param user
+     */
+    void update(User user);
 }
