@@ -1,6 +1,7 @@
-package tech.aistar.day01.dao;
+package tech.atistar.day01.dao;
 
 import org.junit.jupiter.api.Test;
+import tech.aistar.day01.dao.IUserDao;
 import tech.aistar.day01.dao.impl.UserDaoImpl;
 import tech.aistar.day01.entity.Gender;
 import tech.aistar.day01.entity.User;
